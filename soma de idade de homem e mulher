@@ -14,19 +14,21 @@ Para x de 1 ate 3 faca
 escreval ("digite a idade de uma mulher: ")
 leia (idade)
 totalm <- totalm + idade
-escreval ("soma das idades das mulheres = ", totalm)
 escreval ("-------------------------------")
 
 Fimpara
+
+escreval ("soma das idades das mulheres = ", totalm)
 escreval ("##################################")
+
 para x de 1 ate 3 faca
 
 escreval ("digite a idade de um homem: ")
 leia (idade)
 totalh <- totalh + idade
-escreval ("soma das idades dos homens = ", totalh)
 escreval ("-------------------------------")
 
 fimpara
+escreval ("soma das idades dos homens = ", totalh)
 
 Fimalgoritmo
