@@ -9,7 +9,7 @@ x: inteiro
 
 Inicio
 
-Para x de 1 ate 6 faca
+Para x de 1 ate 3 faca
 
 escreval ("digite a idade de uma mulher: ")
 leia (idade)
@@ -19,7 +19,7 @@ escreval ("-------------------------------")
 
 Fimpara
 escreval ("##################################")
-para x de 1 ate 6 faca
+para x de 1 ate 3 faca
 
 escreval ("digite a idade de um homem: ")
 leia (idade)
