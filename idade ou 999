@@ -1,0 +1,71 @@
+Algoritmo "idade ou 999"
+
+Var
+
+vezes: inteiro
+vezesm: inteiro
+vezesf: inteiro
+somam : inteiro
+somaf: inteiro
+idade: inteiro
+gnr: inteiro
+maior: inteiro
+
+Inicio
+
+idade <- 0
+
+Enquanto idade <> 999 faca
+ Escreval (" ")
+ Escreval ("digite sua idade ou 999 para o fim")
+ Escreval (" ")
+ Leia (idade)
+
+Se(idade <> 999) entao
+
+ vezes <- vezes + 1
+ Escreval ("qual seu genêro?")
+ Escreval ("1- Masculino")
+ Escreval ("2- Feminino")
+ Escreval (" ")
+ Leia (gnr)
+
+Se (idade > maior) entao
+ maior <- idade
+ fimse
+
+Se (gnr < 2) entao
+ vezesm <- vezesm + 1
+ somam <- somam + idade
+
+Senao
+ Se (gnr < 3)   entao
+  vezesf <- vezesf + 1
+  somaf <- somaf + idade
+ senao
+ Se (gnr > 2) entao
+ Escreval ("opção inexistente. TENTE NOVAMENTE.")
+ Escreval (" ")
+ Leia (gnr)
+
+  fimse
+  fimse
+  fimse
+  fimse
+
+Se (idade = 999) entao
+ Escreval (" ")
+ Escreval ("foram digitadas", vezes, " idades")
+ Escreval (" ")
+ Escreval ("idades de homens: ",vezesm)
+ Escreval ("soma idades homens: ",somam)
+ Escreval (" ")
+ Escreval ("idades das mulheres: ",vezesf)
+ Escreval ("soma idades mulheres: ",somaf)
+ Escreval (" ")
+ Escreval ("maior idade: ", maior)
+ fimse
+
+fimenquanto
+
+Fimalgoritmo
