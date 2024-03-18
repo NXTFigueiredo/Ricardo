@@ -6,29 +6,28 @@ totalm: inteiro
 totalh: inteiro
 idade: inteiro
 x: inteiro
+nome: caractere
+sexo: caractere
 
 Inicio
 
-Para x de 1 ate 3 faca
+Para x de 1 ate 6 faca
 
-escreval ("digite a idade de uma mulher: ")
+escreval ("digite seu nome: ")
+leia (nome)
+escreval ("digite sua idade: ")
 leia (idade)
+escreval ("digite seu sexo: ")
+leia (sexo)
+se (sexo = "feminino") entao
 totalm <- totalm + idade
+senao
+totalh <- totalh + idade
+fimse
 escreval ("-------------------------------")
 
 Fimpara
-
-escreval ("soma das idades das mulheres = ", totalm)
-escreval ("##################################")
-
-para x de 1 ate 3 faca
-
-escreval ("digite a idade de um homem: ")
-leia (idade)
-totalh <- totalh + idade
-escreval ("-------------------------------")
-
-fimpara
-escreval ("soma das idades dos homens = ", totalh)
+escreval ("a soma da idades masculinas são: ", totalh)
+escreval ("a soma da idades femininas são: ", totalm)
 
 Fimalgoritmo
