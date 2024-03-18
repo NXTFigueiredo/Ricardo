@@ -1,0 +1,28 @@
+Algoritmo "DESEJA CONTINUAR"
+
+Var
+
+x: inteiro
+continuar: caractere
+
+Inicio
+
+continuar <- "S"
+x <- 1
+
+enquanto continuar = "S" faca
+escreva (x)
+
+escreval (" - deseja continuar? [S/N]")
+leia (continuar)
+escreval ("")
+
+se continuar = "S" entao
+x <- x + 1
+fimse
+
+fimenquanto
+
+escreval(" execuções = ", x)
+
+Fimalgoritmo
