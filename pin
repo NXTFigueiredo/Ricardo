@@ -1,0 +1,17 @@
+Algoritmo "pin"
+
+Var
+
+x: inteiro
+
+Inicio
+
+para x de 1 ate 40 faca
+ se (x%4 = 0) entao
+ escreval (" pin")
+ senao
+ escreva (x)
+ fimse
+fimpara
+
+Fimalgoritmo
