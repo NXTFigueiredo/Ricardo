@@ -1,0 +1,17 @@
+Algoritmo "deseja digitar mais"
+
+Var
+ continuar: caractere
+ x: inteiro
+
+Inicio
+ continuar <- "sim"
+ x <- 1
+ enquanto continuar = "sim" faca
+ escreval ("numero = ", x)
+ x <- x + 1
+ escreval ("deseja digitar mais um numero? [sim ou não]")
+ leia (continuar)
+ fimenquanto
+
+Fimalgoritmo
