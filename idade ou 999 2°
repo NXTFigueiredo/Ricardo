@@ -1,0 +1,27 @@
+Algoritmo "idade ou 999 2°"
+
+Var
+
+vezes: inteiro
+idade: inteiro
+tudo: inteiro
+
+Inicio
+
+idade <- 0
+
+Enquanto idade <> 999 faca
+ Escreval (" ")
+ Escreval ("digite sua idade ou 999 para o fim")
+ Escreval (" ")
+ Leia (idade)
+ 
+ Se (idade = 999) entao
+ Escreval (" ")
+ Escreval ("foram digitadas", tudo, " idades")
+ fimse
+ tudo <- vezes + idade
+ 
+fimenquanto
+
+Fimalgoritmo
