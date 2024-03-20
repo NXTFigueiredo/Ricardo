@@ -1,0 +1,17 @@
+Algoritmo "par ou ímpar"
+
+Var
+x: inteiro
+numero_final: inteiro
+
+Inicio
+ para x de 1 ate 50 faca
+ escreva ("numero ", x)
+ se (x % 2 = 0) entao
+ escreval (" - par")
+ senao
+ escreval (" - ímpar")
+ fimse
+ fimpara
+
+Fimalgoritmo
