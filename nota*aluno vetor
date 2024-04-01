@@ -1,0 +1,61 @@
+Algoritmo "nota*aluno vetor"
+
+Var
+nomes: vetor[1..5] de caractere
+notas: vetor[1..5,1..3] de real
+quantidade: inteiro
+x, y: inteiro
+resposta: inteiro
+soma, media: real
+
+Inicio
+limpatela
+
+escreval("|------------------------------------------------|")
+escreval("|                                                |")
+escreval("|                                                |")
+escreval("|           SISTEMA DE NOTAS DO COLÉGIO          |")
+escreval("|                                                |")
+escreval("|                                                |")
+escreval("|------------------------------------------------|")
+escreval("")
+escreval("INFORME O NÚMERO DE ALUNOS: ")
+ leia(quantidade)
+escreval("")
+
+   para x de 1 ate quantidade faca
+
+limpatela
+escreval("Qual o nome do [", x, " ]º aluno ?")
+ leia(nomes[x])
+
+para y de 1 ate 3 faca
+escreval("")
+escreval("ALUNO: ", x)
+escreval("NOTA: ", y, "ª")
+escreval("Qual é a nota ?")
+ leia(notas[x,y])
+fimpara
+
+fimpara
+
+limpatela
+
+escreval("Informe um número de 1 até " , quantidade, " para exibir os dados")
+ leia(resposta)
+
+escreval("")
+escreval("RESULTADOS:-------------------")
+escreval("Nome do aluno: " + nomes[resposta])
+   soma <- 0
+ para y de 1 ate 3 faca
+escreval (y,"ª nota: ", notas[resposta,y])
+   soma <- soma + notas[resposta,y])
+ fimpara
+
+   media <- soma / 3
+
+escreval ("")
+escreval("Média = [",media,"]")
+
+Fimalgoritmo
