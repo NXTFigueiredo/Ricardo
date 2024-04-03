@@ -1,0 +1,51 @@
+PAGINA1
+<html>
+<head>
+<title> Página 1 </title>
+</head>
+<body>
+<center>
+Bom dia! Essa e a pagina 1.<br><br>
+<font color = 'red' size = '5'>
+Nathalia <br>
+</font>
+<img src="img/nerd.jpg" width='20%'>
+</center>
+<a href='pagina2.html'>clique aqui para ir para a pagina 2<a/>
+</body>
+</html>
+
+PAGINA2
+<html>
+<head>
+<title> Página 2 </title>
+</head>
+<body>
+<center>
+Bom dia! Essa e a pagina 2.<br><br>
+<font color = 'red' size = '5'>
+Nathalia <br>
+</font>
+<img src="img/nerd.jpg" width='20%'>
+</center>
+<a href='pagina3.html'>clique aqui para ir para a pagina 3<a/>
+</body>
+</html>
+
+PAGINA3
+<html>
+<head>
+<title> Página 3 </title>
+</head>
+<body>
+<center>
+Bom dia! Essa e a pagina 3.<br><br>
+<font color = 'red' size = '5'>
+Nathalia <br>
+</font>
+<img src="img/nerd.jpg" width='20%'>
+</center>
+clique aqui para ir para a pagina1
+<a href='pagina1.html'><img src="img/botao.jpg" width='20%'><a/>
+</body>
+</html>
