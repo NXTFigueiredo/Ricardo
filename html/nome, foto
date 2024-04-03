@@ -1,0 +1,12 @@
+<html>
+<head>
+<title> Página 1 </title>
+</head>
+<body>
+Bom dia!<br><br>
+<font color = 'red' size = '5'>
+Nathalia <br>
+</font>
+<img src='foto1.jpg' width='40%'>
+</body>
+</html>
