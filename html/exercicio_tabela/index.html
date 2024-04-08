@@ -13,7 +13,33 @@
         document.write("<img src='imagens/mulher3.jpg' width='15%'>")
         document.write("<br>")
         $nome = prompt("Qual o seu nome?")
-        document.write("o nome digitado foi: "+$nome)
+        document.write("o nome digitado foi: " + $nome)
+        document.write("<br>")
+        $sexo = prompt("Qual é o seu sexo? [M] ou [F]")
+        document.write("Sexo = " + $sexo)
+
+        if (($sexo == "M") || ($sexo == "m")) 
+        {
+            document.writeln(" = Masculino")
+        }
+        else 
+        {
+            document.writeln(" = Feminino")
+        }
+
+        document.write("<br>")
+        $idade = prompt("Qual é a sua idade?")
+        document.write("Você é = " + $idade)
+
+        if (($idade < "18")) 
+        {
+            document.writeln(" = Menor Idade")
+        }
+        else 
+        {
+            document.writeln(" = Maior Idade")
+        }
+
     </script>
 
 </head>
