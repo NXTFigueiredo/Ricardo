@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("hello world")
+        document.write("<center>")
+        document.write("<font color='red' size='5'>SENAI/SUMARÉ </font>")
+        document.write("<br>")
+        document.write("<img src='imagens/mulher3.jpg' width='15%'>")
+        document.write("<br>")
+        $nome = prompt("Qual o seu nome?")
+        document.write("o nome digitado foi: " + $nome)
+        document.write("<br>")
+        $sexo = prompt("Qual é o seu sexo? [M] ou [F]")
+        $idade = prompt("Qual é a sua idade?")
+
+        if (($sexo == "M") || ($sexo == "m"))
+        {
+            if (($idade < "18")) 
+        {
+            alert("menino")
+        }
+        else 
+        {
+            alert("homem")
+        }
+        }
+        else
+        {
+            if (($idade < "18")) 
+        {
+            alert("menina")
+        }
+        else 
+        {
+            alert("mulher")
+        }  
+        }
+        
+    </script>
+
+</head>
+
+<body bgcolor="#778899">
+    <center>
+
+        <font color="PURPLE" size="6">
+            INFORMAÇÕES DOS FUNCIONÁRIOS DA EMPRESA X <br>
+        </font>
+        <table border="1" width="600" height="1170">
+            <tr bgcolor="#0000FF">
+                <td widht="300" height="90" align="center"><b>NOMES</b></td>
+                <td widht="200" height="90" align="center"><b>IDADE</b></td>
+                <td widht="100" height="90" align="center"><b>FOTO</b></td>
+            </tr>
+            <tr>
+                <td height="50">Amanda</td>
+                <td height="30">25</td>
+                <td height="70"><img src="imagens/mulher1.jpg" width='15%'></td>
+            </tr>
+            <tr>
+                <td height="50">Roberto</td>
+                <td height="30">26</td>
+                <td height="70"><img src="imagens/homem1.jpg" width='15%'></td>
+            </tr>
+            <tr>
+                <td height="50">Erica</td>
+                <td height="30">28</td>
+                <td height="70"><img src="imagens/mulher2.jpg" width='15%'></td>
+            </tr>
+            <tr>
+                <td height="50">Vinícius</td>
+                <td height="30">30</td>
+                <td height="70"><img src="imagens/homem2.jpg" width='15%'></td>
+            </tr>
+            <tr>
+                <td height="50">Cristina</td>
+                <td height="30">38</td>
+                <td height="70"><img src="imagens/mulher3.jpg" width='15%'></td>
+            </tr>
+            <tr>
+                <td height="50">Marcos</td>
+                <td height="30">40</td>
+                <td height="70"><img src="imagens/homem3.jpg" width='15%'></td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
