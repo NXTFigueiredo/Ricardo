@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function Validar() {
+            $frutas = ("Frutas escolhidas foram: ")
+            if (this.form1.Banana.checked) {
+                $frutas = $frutas + " Banana "
+            }
+
+            if (this.form1.Maçã.checked) {
+                $frutas = $frutas + " Maçã "
+            }
+
+            if (this.form1.Uva.checked) {
+                $frutas = $frutas + " Uva "
+            }
+
+            if (this.form1.Pêra.checked) {
+                $frutas = $frutas + " Pêra "
+            }
+
+            if (this.form1.Abacate.checked) {
+                $frutas = $frutas + " Abacate "
+            }
+
+            if (this.form1.Manga.checked) {
+                $frutas = $frutas + " Manga "
+            }
+
+            //alert("Cheguei aqui!")
+
+            $curso = this.form1.fCurso.value
+            alert("Curso = " + $curso)
+
+
+            document.write($frutas)
+            return false;
+
+        }
+    </script>
+</head>
+
+<body>
+        ESCOLHA UMA FRUTA:
+    <br><br>
+
+    <form name="form1" action="" nethod="post" onsubmit="return Validar()">
+        <input type="checkbox" name="Banana">Banana<br>
+        <input type="checkbox" name="Maçã">Maçã<br>
+        <input type="checkbox" name="Uva">Uva<br>
+        <input type="checkbox" name="Pêra">Pêra<br>
+        <input type="checkbox" name="Abacate">Abacate<br>
+        <input type="checkbox" name="Manga">Manga<br><br><br>
+
+        <input type="hidden" name="fCurso" value="DS">
+
+        <input type="submit" value="Gravar">
+
+    </form>
+
+</body>
+
+</html>
