@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>pagina3</title>
+    <script>
+
+function senai()
+    {
+        $Nome = this.form1.fnome.value;
+        $Idade = this.form1.fidade.value;
+        $Sexo = this.form1.fsexo.value;
+        $Curso = this.form1.fcurso.value;
+        $Turno = this.form1.fturno.value;
+        $Professor1 = this.form1.fprofessor1.value;
+        $Professor2 = this.form1.fprofessor2.value;
+        $Disciplina_que_mais_gosta = ("Disciplinas que mais gosta: ")
+        if (this.form1.HTML.checked) {
+            $Disciplina_que_mais_gosta = $Disciplina_que_mais_gosta + " HTML "
+            }
+
+            if (this.form1.JavaScript.checked) {
+                $Disciplina_que_mais_gosta = $Disciplina_que_mais_gosta + " JavaScript "
+            }
+
+            if (this.form1.Arduino.checked) {
+                $Disciplina_que_mais_gosta = $Disciplina_que_mais_gosta + " Arduino "
+            }
+
+            if (this.form1.Lógica.checked) {
+                $Disciplina_que_mais_gosta = $Disciplina_que_mais_gosta + " Lógica "
+            }
+
+            if (this.form1.Gestalt.checked) {
+                $Disciplina_que_mais_gosta = $Disciplina_que_mais_gosta + " Gestalt "
+            }
+
+        document.write ("Suas informações: <br>")
+        document.write("<br>Nome: " + $Nome + "<br>Idade: " + $Idade +
+         "<br>Sexo: " + $Sexo + "<br>Curso: " + $Curso +  "<br>Turno: " + $Turno 
+         + "<br>Professor número1: " + $Professor1 + "<br>Professor número2: " 
+         + $Professor2 + "<br>" + $Disciplina_que_mais_gosta )
+        return false;
+    }
+        document.write("<center>")
+        document.write("<font color='#fc0356' size='6'>BEM VINDO[A]!!</font><br>")
+        document.write("<font size='4'>Preencha o formulário por favor.")
+        document.write("<br><br><br><br>")
+        
+    </script>
+</head>
+
+<body bgcolor="#a1a1a1">
+    <form name="form1" method="post" action="" onsubmit="return senai()">
+<table border="0">
+    <tr>
+        <td><b> Nome: <input type="text" name="fnome"> <br><br></b></td>
+    </tr>
+    <tr>
+        <td><b> Idade: <input type="text" name="fidade" size="4"><br></b></td>
+    </tr>
+    <tr>
+        <td><b> Sexo:
+            Masculino <input type="radio" name="fsexo" value="Masculino">
+            Feminino <input type="radio" name="fsexo" value="Feminino"> <br><br></b></td>
+    </tr>
+    <tr>
+        <td><b>Curso:<select name="fcurso">
+            <option value="embranco">[Escolha]</option>
+            <option value="DS">DS</option>
+            <option value="Mecânica">Mecânica</option>
+            <option value="Solda">Solda</option>
+        </select><br></b></td>
+    </tr>
+    <tr>
+        <td><b>Turno:<select name="fturno">
+            <option value="embranco">[Escolha]</option>
+            <option value="Manhã">Manhã</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noite">Noite</option>
+        </select><br><br></b></td>
+    </tr>
+    <tr>
+        <td><b>Professor1: <input type="text" name="fprofessor1" size="20"> <br></b></td>
+    </tr>
+    <tr>
+        <td><b>Professor2: <input type="text" name="fprofessor2" size="20"> <br><br></b></td>
+    </tr>
+    <tr>
+        <td><b>Disciplina que mais gosta:<br>
+            <form name="disciplinaquemaisgosta" action="" nethod="post" onsubmit="return Validar()">
+                <input type="checkbox" name="HTML"> HTML <br>
+                <input type="checkbox" name="JavaScript"> JavaScript <br>
+                <input type="checkbox" name="Arduino"> Arduino <br>
+                <input type="checkbox" name="Lógica"> Lógica <br>
+                <input type="checkbox" name="Gestalt"> Gestalt 
+            </form><br></b></td>
+    </tr>
+    <tr>
+        <td align="center"><b><input type="submit" value="GRAVAR"><input type="reset" value="LIMPAR"></b></td>
+    </tr>
+    </table>
+    </form>
+</body>
+
+</html>
